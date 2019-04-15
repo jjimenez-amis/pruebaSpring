@@ -2,8 +2,8 @@ pipeline {
 	agent any
 
 	stages{
-		stage(""){
-		
+		stage("Run"){
+			sh './scripts/hola.sh'
 	        }
 	}
 
