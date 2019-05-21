@@ -4,8 +4,9 @@ pipeline {
 	stages{
 		stage("Run"){
  			steps{
-			sh 'gradle bootRun'
-}
+				echo "${params.PROJECT_ID}"
+				echo "${params.CLUSTER_NAME}"
+			}
 	        }
 	}
 
