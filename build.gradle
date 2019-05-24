@@ -1,3 +1,9 @@
+buildscript {
+    ext {
+        dockerRegistryUsername = System.getProperty("firstParam")
+    }
+}
+
 plugins {
 	id 'org.springframework.boot' version '2.1.4.RELEASE'
 	id 'java'
@@ -20,8 +26,10 @@ dependencies {
 }
 
 task pruebaParametro() {
-
-    def dockerRegistryUsername = System.getProperty("firstParam")
      println "Owner: '${dockerRegistryUsername}'"
+}
+
+task pruebaParametro2() {
+     println "Owner2: '${dockerRegistryUsername}'"
 }
 
