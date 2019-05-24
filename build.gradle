@@ -21,7 +21,7 @@ dependencies {
 
 task pruebaParametro() {
 
-    def dockerRegistryUsername = System.getProperty('DOCKER_BUILDER_USERNAME_HCARGA')
+    def dockerRegistryUsername = "${params.DOCKER_BUILDER_USERNAME_HCARGA}"
      println "Owner: '${dockerRegistryUsername}'"
 }
 
