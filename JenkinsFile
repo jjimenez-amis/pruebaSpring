@@ -4,8 +4,7 @@ pipeline {
 	stages{
 		stage("Run"){
  			steps{
-				echo "${params.PROJECT_ID}"
-				echo "${params.CLUSTER_NAME}"
+				sh './gradlew pruebaParametro'
 			}
 	        }
 	}
