@@ -1,6 +1,9 @@
 pipeline {
 	agent any
 
+	environment{
+	DOCKER_BUILDER_USERNAME_HCARGA = "${DOCKER_BUILDER_USERNAME_HCARGA}"
+	}
 	stages{
 		stage("Run"){
  			steps{
