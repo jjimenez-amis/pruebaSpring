@@ -11,6 +11,12 @@ pipeline {
 				sh './gradlew pruebaParametro -DfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
 			}
 	        }
+		
+		stage("Run2"){
+ 			steps{
+				sh './gradlew pruebaParametro2'
+			}
+	        }
 	}
 
 }
