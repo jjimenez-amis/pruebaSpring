@@ -19,7 +19,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-task pruebaParametro(type: com.bmuschko.gradle.docker.tasks.image.Dockerfile) {
+task pruebaParametro() {
 
     def dockerRegistryUsername = System.getProperty('DOCKER_BUILDER_USERNAME_HCARGA')
      println "Owner: '${dockerRegistryUsername}'"
