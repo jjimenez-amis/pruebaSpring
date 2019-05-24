@@ -8,7 +8,7 @@ pipeline {
 		stage("Run"){
  			steps{
 				sh 'chmod 777 ./gradlew'
-				sh './gradlew pruebaParametro -DfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
+				sh './gradlew pruebaParametro -PfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
 			}
 	        }
 	}
