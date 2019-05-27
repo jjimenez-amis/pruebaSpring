@@ -2,19 +2,14 @@ pipeline {
 	agent any
 
 	environment{
-	DOCKER_BUILDER_USERNAME_HCARGA = "${params.DOCKER_BUILDER_USERNAME_HCARGA}"
+	//DOCKER_BUILDER_USERNAME_HCARGA = "${params.DOCKER_BUILDER_USERNAME_HCARGA}"
 	}
 	stages{
 		stage("Run"){
  			steps{
-				sh 'chmod 777 ./gradlew'
-				sh './gradlew pruebaParametro -DfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
-			}
-	        }
-		
-		stage("Run2"){
- 			steps{
-				sh './gradlew pruebaParametro2'
+				//sh 'chmod 777 ./gradlew'
+				//sh './gradlew pruebaParametro -DfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
+				echo 'BRANCH MASTER'
 			}
 	        }
 	}
