@@ -5,13 +5,17 @@ pipeline {
 	//DOCKER_BUILDER_USERNAME_HCARGA = "${params.DOCKER_BUILDER_USERNAME_HCARGA}"
 	}
 	stages{
-		stage("Run"){
+		stage("Checkout"){
  			steps{
 				//sh 'chmod 777 ./gradlew'
 				//sh './gradlew pruebaParametro -DfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
-				echo 'BRANCH MASTER'
+				sh 'git checkout master'
 			}
 	        }
+		
+		stage("Run"){
+			echo 'BRANCH MASTER'
+		}
 	}
 
 }
