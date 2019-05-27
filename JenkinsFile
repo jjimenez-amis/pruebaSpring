@@ -14,7 +14,10 @@ pipeline {
 	        }
 		
 		stage("Run"){
-			echo 'BRANCH MASTER'
+			steps{
+				echo 'BRANCH MASTER'
+			}
+			
 		}
 	}
 
