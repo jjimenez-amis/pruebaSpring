@@ -1,22 +1,16 @@
 pipeline {
 	agent any
 
-	environment{
-	//DOCKER_BUILDER_USERNAME_HCARGA = "${params.DOCKER_BUILDER_USERNAME_HCARGA}"
-	branch = "${params.BRANCH}"
-	}
 	stages{
 		stage("Checkout"){
  			steps{
-				//sh 'chmod 777 ./gradlew'
-				//sh './gradlew pruebaParametro -DfirstParam=${DOCKER_BUILDER_USERNAME_HCARGA}'
-				sh 'git checkout ${branch}'
+				git branch: 'iss53', credentialsId: '56339e90-f895-48aa-9c40-df0614526968', url: 'https://github.com/ericcl17/pruebaSpring.git'
 			}
 	        }
 		
 		stage("Run"){
 			steps{
-				echo 'BRANCH MASTER'
+				sh 'sh scripts/hola.sh'
 			}
 			
 		}
