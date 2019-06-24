@@ -9,6 +9,8 @@ android kotlin
 https://blog.kirei.io/quieres-aprender-kotlin-empieza-por-aqu%C3%AD-85fb4f481860
 https://devexperto.com/kotlin-android-curso-gratis/
 
+https://polymer-library.polymer-project.org/2.0/docs/devguide/events
+
 cursos fase 2
 PDSSV3 
 PDSS AGILE
