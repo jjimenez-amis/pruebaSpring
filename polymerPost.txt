@@ -1,0 +1,50 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../formulario-app/formulario-app.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
+
+<dom-module id="app-employees">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <iron-ajax
+      id="insertData"
+      method="post"
+      url="http://localhost:3000/employees"
+      handle-as="json"
+      content-type="application/json"
+      body="[[data]]">
+    </iron-ajax>
+    <formulario-app on-save-employee="processData"></formulario-app>
+  </template>
+
+  <script>
+    /**
+     * `app-employees`
+     *
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class AppEmployees extends Polymer.Element {
+      static get is() { return 'app-employees'; }
+      static get properties() {
+        return {
+          data: {
+            type: Object
+          }
+        };
+      }
+
+      processData(e){
+        this.data=e.detail;
+        this.$.insertData.generateRequest();
+      }
+    }
+
+    window.customElements.define(AppEmployees.is, AppEmployees);
+  </script>
+</dom-module>
