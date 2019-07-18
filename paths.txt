@@ -21,3 +21,6 @@ https://www.bbva.com/wp-content/themes/coronita-bbvacom/assets/images/comun/bbva
 
 
 https://meowni.ca/posts/polymer-2-cheatsheet/#extending-an-element
+
+
+<link rel="import" href="https://polygit.org/polymer+^v2.1.0/webcomponentsjs+^v1.3.0/components/polymer/polymer-element.html">
