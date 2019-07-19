@@ -24,3 +24,18 @@ https://meowni.ca/posts/polymer-2-cheatsheet/#extending-an-element
 
 
 <link rel="import" href="https://polygit.org/polymer+^v2.1.0/webcomponentsjs+^v1.3.0/components/polymer/polymer-element.html">
+
+card:
+https://codepen.io/Kalyan_Lahkar/pen/wpeaJx
+
+plunker:
+https://plnkr.co/
+
+expresiones regulares:
+https://www.regexpal.com/
+https://www.w3schools.com/jsref/jsref_obj_regexp.asp
+
+cheat polymer:
+https://meowni.ca/posts/polymer-2-cheatsheet/#extending-an-element
+
+https://github.com/jiturbide/CPolymerStk2019
