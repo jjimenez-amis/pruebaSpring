@@ -39,3 +39,6 @@ cheat polymer:
 https://meowni.ca/posts/polymer-2-cheatsheet/#extending-an-element
 
 https://github.com/jiturbide/CPolymerStk2019
+
+array metods:
+https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php
